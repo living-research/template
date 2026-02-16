@@ -2,9 +2,7 @@
 
 > One-line description of the research question.
 
-## Status
-
-![Experiments](../../actions/workflows/experiments.yml/badge.svg)
+![Experiments](https://github.com/living-research/REPO_NAME/actions/workflows/experiments.yml/badge.svg)
 
 ## Question
 
@@ -12,21 +10,23 @@ What specific question does this project investigate?
 
 ## Approach
 
-Brief description of methodology — what data, what analysis, what tools.
+What data, what analysis, what constraints.
 
 ## Structure
 
 ```
 data/raw/          # Source data (immutable)
-data/processed/    # Derived datasets (reproducible from raw)
-experiments/       # Analysis scripts and notebooks
-docs/              # Published findings (GitHub Pages)
-.github/workflows/ # CI that reruns experiments
+data/processed/    # Derived datasets (reproduced by CI)
+experiments/       # Analysis scripts
+docs/              # Published findings → GitHub Pages
+.github/workflows/ # CI that reruns experiments on every push
 ```
 
-## Results
+## Findings
 
-Published at: `https://living-research.github.io/<repo-name>/`
+Published at `https://living-research.github.io/REPO_NAME/`
+
+Updated automatically when experiments produce new results.
 
 ## Contributing
 
