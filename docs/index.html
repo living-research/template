@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Title — Living Research</title>
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --bg: #ffffff;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+      --space-sm: 0.5rem;
+      --space-md: 1rem;
+      --space-lg: 2rem;
+      --space-xl: 4rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --bg: #111827;
+        --border: #374151;
+        --accent: #60a5fa;
+      }
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: var(--space-xl) var(--space-md);
+    }
+
+    h1 { font-size: 1.75rem; margin-bottom: var(--space-sm); }
+    h2 { font-size: 1.25rem; margin-top: var(--space-lg); margin-bottom: var(--space-sm); }
+    p { margin-bottom: var(--space-md); }
+    .muted { color: var(--muted); font-size: 0.875rem; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    .status {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    section { margin-top: var(--space-lg); }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>[Project Title]</h1>
+    <p class="muted">A <a href="https://github.com/living-research">living research</a> project</p>
+    <span class="status">In Progress</span>
+  </header>
+
+  <section>
+    <h2>Question</h2>
+    <p>What specific question does this project investigate?</p>
+  </section>
+
+  <section>
+    <h2>Approach</h2>
+    <p>Description of methodology.</p>
+  </section>
+
+  <section>
+    <h2>Findings</h2>
+    <p>Results will appear here as experiments run.</p>
+  </section>
+
+  <section>
+    <h2>Source</h2>
+    <p><a href="https://github.com/living-research/REPO_NAME">View on GitHub</a> — data, code, and full history.</p>
+  </section>
+</body>
+</html>
