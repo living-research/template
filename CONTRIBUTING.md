@@ -3,15 +3,16 @@
 ## How to contribute
 
 1. **Open an issue** — ask a question, flag a problem, suggest an analysis.
-2. **Submit a PR** — new data, experiments, or corrections.
+2. **Submit a PR** — new notebooks, data, or corrections.
 3. **Review** — critical feedback is as valuable as new work.
 
 ## Guidelines
 
-- Every experiment must be reproducible via `make run` or CI.
-- Raw data in `data/raw/` is immutable. Transform into `data/processed/`.
+- Notebooks are the primary artifact. Each notebook should run end-to-end and produce its outputs.
+- Raw data in `data/raw/` is immutable. Derived data goes to `data/processed/`.
+- Write findings data to `docs/data/` so the published page can read it.
 - Commit messages are part of the research record. Document reasoning, not just changes.
-- One script per analysis. Dependencies in `requirements.txt`.
+- Dependencies go in `requirements.txt`.
 
 ## Attribution
 

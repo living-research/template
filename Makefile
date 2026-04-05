@@ -1,12 +1,14 @@
 .PHONY: run clean
 
 run:
-	@echo "Running experiments..."
-	@for f in experiments/*.py; do \
-		[ -f "$$f" ] || continue; \
-		echo "→ $$f"; \
-		python "$$f"; \
+	@echo "Running notebooks..."
+	@for nb in notebooks/*.ipynb; do \
+		[ -f "$$nb" ] || continue; \
+		echo "→ $$nb"; \
+		jupyter nbconvert --to notebook --execute "$$nb" \
+			--ExecutePreprocessor.timeout=600 \
+			--output /dev/null; \
 	done
 
 clean:
-	rm -rf data/processed/*
+	rm -rf data/processed/* results/*
